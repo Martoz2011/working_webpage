@@ -1,0 +1,177 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url('pictures/15-AI-Generated-Holiday-Background-for-Microsoft-Teams.jpg'); /* Update with your background path */
+  background-size: cover;
+  background-position: center;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+/* Header Styling */
+header h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+header h2 {
+  font-size: 1.8rem;
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+/* Card Container (Responsive Grid Layout) */
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  padding: 20px;
+}
+
+/* Individual Card Styling */
+.card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.card h3 {
+  font-size: 1.4rem;
+  margin: 15px 0;
+}
+
+.card p {
+  font-size: 1rem;
+  padding: 0 10px 15px;
+}
+
+/* Button and Link Styling */
+.button-style,
+button {
+  background-color: #ff6347;
+  color: white;
+  padding: 10px 20px;
+  border: 2px solid #ff6347;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: none; /* Remove underline for links */
+  text-align: center;    /* Center align text in links */
+  display: inline-block; /* Ensure <a> tags behave like buttons */
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+}
+
+.button-style:hover,
+button:hover {
+  background-color: white;
+  color: #ff6347;
+  border: 2px solid #ff6347;
+  transform: scale(1.05);
+}
+
+.button-style:active,
+button:active {
+  background-color: #e03d28;
+  color: white;
+  transform: scale(0.95);
+}
+
+/* Media Queries */
+
+/* Tablet screens (below 768px) */
+@media (max-width: 768px) {
+  header h1 {
+      font-size: 2rem;
+  }
+
+  header h2 {
+      font-size: 1.5rem;
+  }
+
+  .card-container {
+      grid-template-columns: 1fr;
+  }
+
+  .card h3 {
+      font-size: 1.1rem;
+  }
+
+  .card p {
+      font-size: 0.9rem;
+  }
+
+  .button-style,
+  button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+  }
+}
+
+/* Mobile screens (below 480px) */
+@media (max-width: 480px) {
+  header h1 {
+      font-size: 1.5rem;
+  }
+
+  header h2 {
+      font-size: 1.2rem;
+  }
+
+  .card {
+      padding: 10px;
+  }
+
+  .card h3 {
+      font-size: 1rem;
+  }
+
+  .card p {
+      font-size: 0.85rem;
+  }
+
+  .button-style,
+  button {
+      font-size: 0.8rem;
+      padding: 6px 12px;
+      border-radius: 20px;
+  }
+}
+.card-content a {
+  text-decoration: none;
+  color: #FF6A4A;
+  border: 1px solid #FF6A4A;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: background-color 0.3s, color 0.3s;}
+  
